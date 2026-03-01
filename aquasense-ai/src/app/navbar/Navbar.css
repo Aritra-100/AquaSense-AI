@@ -1,0 +1,40 @@
+/* ========================= */
+/* NAVBAR - AQUASENSE THEME */
+/* ========================= */
+
+.custom-navbar {
+  background-color: #0F766E; /* Primary Deep Teal */
+  padding: 14px 0;
+}
+
+.custom-navbar .navbar-brand {
+  color: #F0FDF4 !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.custom-navbar .nav-link {
+  color: #F0FDF4 !important;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #38BDF8 !important; /* Accent Sky Blue */
+}
+
+.custom-navbar .nav-link.active {
+  color: #10B981 !important; /* Emerald */
+  font-weight: 600;
+}
+
+/* Mobile toggle button */
+.custom-navbar .navbar-toggler {
+  border: none;
+}
+
+.custom-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}

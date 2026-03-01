@@ -1,0 +1,38 @@
+/* ========================= */
+/* FOOTER - AQUASENSE THEME */
+/* ========================= */
+
+.custom-footer {
+  background-color: #1e293b; /* Slate */
+  color: #f0fdf4;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.custom-footer h5 {
+  color: #10b981; /* Emerald */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.custom-footer p {
+  color: #cbd5e1;
+}
+
+.custom-footer a {
+  color: #f0fdf4;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.custom-footer a:hover {
+  color: #38bdf8; /* Accent */
+}
+
+.custom-footer hr {
+  border-color: rgba(240, 253, 244, 0.2);
+}
+
+.custom-footer small {
+  color: #94a3b8;
+}
