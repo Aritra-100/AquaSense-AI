@@ -1,9 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import "./alert.css";
+import "./Alert.css";
 
 export default function Alert() {
-
   const initialAlerts = [
     {
       id: 1,
@@ -12,7 +11,7 @@ export default function Alert() {
       current: "18%",
       threshold: "25%",
       severity: "critical",
-      time: "02 March 2026 - 10:45 AM"
+      time: "02 March 2026 - 10:45 AM",
     },
     {
       id: 2,
@@ -21,7 +20,7 @@ export default function Alert() {
       current: "78%",
       threshold: "70%",
       severity: "warning",
-      time: "02 March 2026 - 09:30 AM"
+      time: "02 March 2026 - 09:30 AM",
     },
     {
       id: 3,
@@ -30,25 +29,25 @@ export default function Alert() {
       current: "-",
       threshold: "-",
       severity: "info",
-      time: "01 March 2026 - 06:15 PM"
-    }
+      time: "01 March 2026 - 06:15 PM",
+    },
   ];
 
   const [alerts, setAlerts] = useState(initialAlerts);
   const [filter, setFilter] = useState("all");
 
   const handleResolve = (id) => {
-    setAlerts(alerts.filter(alert => alert.id !== id));
+    setAlerts(alerts.filter((alert) => alert.id !== id));
   };
 
   const filteredAlerts =
     filter === "all"
       ? alerts
-      : alerts.filter(alert => alert.severity === filter);
+      : alerts.filter((alert) => alert.severity === filter);
 
-  const criticalCount = alerts.filter(a => a.severity === "critical").length;
-  const warningCount = alerts.filter(a => a.severity === "warning").length;
-  const infoCount = alerts.filter(a => a.severity === "info").length;
+  const criticalCount = alerts.filter((a) => a.severity === "critical").length;
+  const warningCount = alerts.filter((a) => a.severity === "warning").length;
+  const infoCount = alerts.filter((a) => a.severity === "info").length;
 
   return (
     <div className="alert-container">
@@ -72,10 +71,18 @@ export default function Alert() {
 
       {/* Filter Buttons */}
       <div className="filter-bar">
-        <button className="filter-btn" onClick={() => setFilter("all")}>All</button>
-        <button className="filter-btn" onClick={() => setFilter("critical")}>Critical</button>
-        <button className="filter-btn" onClick={() => setFilter("warning")}>Warning</button>
-        <button className="filter-btn" onClick={() => setFilter("info")}>Info</button>
+        <button className="filter-btn" onClick={() => setFilter("all")}>
+          All
+        </button>
+        <button className="filter-btn" onClick={() => setFilter("critical")}>
+          Critical
+        </button>
+        <button className="filter-btn" onClick={() => setFilter("warning")}>
+          Warning
+        </button>
+        <button className="filter-btn" onClick={() => setFilter("info")}>
+          Info
+        </button>
       </div>
 
       {/* Alert List */}
@@ -83,10 +90,12 @@ export default function Alert() {
         {filteredAlerts.length === 0 ? (
           <p style={{ textAlign: "center" }}>No alerts available 🎉</p>
         ) : (
-          filteredAlerts.map(alert => (
+          filteredAlerts.map((alert) => (
             <div key={alert.id} className={`alert-card ${alert.severity}`}>
               <div className="alert-details">
-                <h3>⚠ {alert.crop} - {alert.message}</h3>
+                <h3>
+                  ⚠ {alert.crop} - {alert.message}
+                </h3>
                 <p>
                   Current: {alert.current} | Threshold: {alert.threshold}
                 </p>

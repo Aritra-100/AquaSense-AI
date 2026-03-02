@@ -8,7 +8,7 @@ const Home = () => {
       <section className="hero-section">
         <div className="hero-overlay"></div>
 
-        <div className="container text-center hero-content">
+        <div className="container-fluid text-center hero-content px-4">
           <h1 className="display-4 fw-bold">
             Intelligent Water Optimization System
           </h1>
@@ -23,7 +23,7 @@ const Home = () => {
               Go to Dashboard
             </NavLink>
 
-            <NavLink to="/about" className="btn btn-outline-light btn-lg">
+            <NavLink to="/overview" className="btn btn-outline-light btn-lg">
               Learn More
             </NavLink>
           </div>
@@ -103,3 +103,4 @@ const Home = () => {
 };
 
 export default Home;
+

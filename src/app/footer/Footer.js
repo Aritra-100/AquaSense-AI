@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row">
           {/* About */}
           <div className="col-md-4 mb-3">
-            <h5>AquaSense AI</h5>
+            <h5>KrishiNeer</h5>
             <p>
               Intelligent Water Optimization System for Precision Irrigation.
               Helping farmers save water and improve crop health using IoT & AI.
@@ -56,7 +56,7 @@ const Footer = () => {
 
         <div className="text-center">
           <small>
-            © {new Date().getFullYear()} AquaSense AI. All Rights Reserved.
+            © {new Date().getFullYear()} KrishiNeer. All Rights Reserved.
           </small>
         </div>
       </div>

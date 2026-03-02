@@ -1,85 +1,105 @@
-import react from "react";
-import "./about.css";
-    
+import "./About.css";
+
 function About() {
-    return (
+  return (
+    <div className="about-container">
+      {/* HERO SECTION */}
+      <section className="about-hero">
+        <h1>Smart Farming for a Water-Scarce Future</h1>
+        <p>
+          Intelligent Water Optimization System powered by IoT and AI to
+          revolutionize precision irrigation.
+        </p>
+      </section>
+
+      {/* VISION SECTION */}
+      <section className="about-section">
+        <h2>🌍 Our Vision</h2>
+        <p>
+          With rising water scarcity and unpredictable climate conditions,
+          traditional irrigation methods are no longer sustainable. Our vision
+          is to ensure every drop of water is used intelligently to maximize
+          crop yield while conserving natural resources.
+        </p>
+      </section>
+
+      {/* PROBLEM vs SOLUTION */}
+      <section className="about-section split">
         <div>
-        
-
-<section>
-    <h2>About Us</h2>
-    <p>
-        Welcome to the <span class="highlight">Intelligent Water Optimization System for Precision Irrigation</span>, 
-        where technology meets sustainable agriculture.
-    </p>
-
-    <p>
-        We are a team of innovators and engineers dedicated to transforming traditional farming 
-        through the power of <span class="highlight">Internet of Things (IoT)</span> and 
-        data-driven decision making. Our mission is to maximize crop productivity 
-        while minimizing water consumption.
-    </p>
-
-    <h2>Our Vision</h2>
-    <p>
-        With increasing water scarcity and unpredictable climate conditions, 
-        efficient irrigation is essential. Our vision is to ensure that every drop of water 
-        is used intelligently to support sustainable agriculture and food security.
-    </p>
-
-    <h2>What We Do</h2>
-    <p>Our IoT-based precision irrigation system monitors:</p>
-    <ul>
-        <li>Soil moisture levels</li>
-        <li>Temperature and humidity</li>
-        <li>Water flow rates</li>
-        <li>Weather conditions</li>
-    </ul>
-
-    <p>
-        Using smart sensors and cloud analytics, our system automatically determines 
-        the exact amount of water required by crops, preventing over-irrigation, 
-        water wastage, soil nutrient loss, and energy inefficiency.
-    </p>
-
-    <h2>How It Works</h2>
-    <ul>
-        <li><strong>Real-Time Data Collection:</strong> Sensors gather soil and environmental data.</li>
-        <li><strong>Data Processing:</strong> Intelligent algorithms analyze crop requirements.</li>
-        <li><strong>Automated Irrigation:</strong> Water supply is optimized based on need.</li>
-        <li><strong>Remote Monitoring:</strong> Farmers can monitor and control the system remotely.</li>
-    </ul>
-
-    <h2>Why It Matters</h2>
-    <p>
-        Agriculture consumes a major portion of freshwater resources. Traditional irrigation 
-        often leads to excessive water use and soil degradation. Our solution helps reduce water 
-        usage, improve crop yield, and promote environmentally responsible farming.
-    </p>
-
-    <h2>Our Commitment</h2>
-    <ul>
-        <li>Innovation in smart agriculture</li>
-        <li>Affordable and accessible technology for farmers</li>
-        <li>Sustainable water management</li>
-        <li>Climate-resilient farming solutions</li>
-    </ul>
-
-    <h2>Join Us</h2>
-    <p>
-        We believe the future of agriculture lies in smart, connected solutions. 
-        Together, we can build a farming ecosystem that is efficient, productive, 
-        and environmentally responsible.
-    </p>
-</section>
-
-<footer>
-    &copy; 2026 Intelligent Water Optimization System | All Rights Reserved
-</footer>
-
-
+          <h2>🚨 The Problem</h2>
+          <ul>
+            <li>Excessive water wastage</li>
+            <li>Unpredictable weather conditions</li>
+            <li>Manual irrigation inefficiencies</li>
+            <li>Declining soil health</li>
+          </ul>
         </div>
-    );
+
+        <div>
+          <h2>💡 Our Solution</h2>
+          <ul>
+            <li>Real-time IoT soil monitoring</li>
+            <li>Weather forecast API integration</li>
+            <li>AI-based irrigation scheduling</li>
+            <li>Automated smart pump control</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* IMPACT SECTION */}
+      <section className="about-impact">
+        <div className="impact-card">
+          <h3>💧 40%</h3>
+          <p>Water Usage Reduction</p>
+        </div>
+        <div className="impact-card">
+          <h3>🌾 25%</h3>
+          <p>Crop Yield Improvement</p>
+        </div>
+        <div className="impact-card">
+          <h3>📡 24/7</h3>
+          <p>Real-Time Monitoring</p>
+        </div>
+        <div className="impact-card">
+          <h3>🤖 AI</h3>
+          <p>Smart Irrigation Scheduling</p>
+        </div>
+      </section>
+
+      {/* TECH STACK */}
+      <section className="about-section">
+        <h2>⚙ Technology Stack</h2>
+        <div className="tech-grid">
+          <div>React.js Frontend</div>
+          <div>Node.js Backend</div>
+          <div>IoT Soil Moisture Sensors</div>
+          <div>Weather Forecast API</div>
+          <div>AI Scheduling Algorithm</div>
+          <div>Cloud Data Analytics</div>
+        </div>
+      </section>
+
+      {/* WHY IT MATTERS */}
+      <section className="about-section">
+        <h2>🌱 Why It Matters</h2>
+        <p>
+          Agriculture consumes a major portion of freshwater resources globally.
+          By integrating intelligent automation and predictive analytics, our
+          system ensures sustainable farming while improving farmer
+          profitability.
+        </p>
+      </section>
+
+      {/* CTA */}
+      <section className="about-cta">
+        <h2>Join the Smart Irrigation Revolution</h2>
+        <p>
+          Building the future of agriculture through innovation and
+          sustainability.
+        </p>
+      </section>
+    </div>
+  );
 }
 
 export default About;
