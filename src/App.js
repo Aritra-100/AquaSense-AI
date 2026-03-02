@@ -25,7 +25,7 @@ function App() {
           <Route path="analytics" element={<Analytics />} />
         </Route>
         <Route path="/overview" element={<CropsOverview /> } />
-        <Route path="/schedule" element={<Alert />} />
+        <Route path="/alert" element={<Alert />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
